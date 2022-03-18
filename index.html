@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <title>Decime el clima</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <!-- CSS, JS, FONT & ICON -->
+    <script src="main.js" defer></script>
+    <link rel="icon" href="Imagenes/cloudsicon.png"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet"/>
+
+  </head>
+  <body>
+    <main>
+
+      <!-- INITIAL IMG START -->
+      <img src="Imagenes/cloudsicon.png" class="mainimg" id="mainimg"/>
+      <!-- INITIAL IMG END -->
+
+      <!-- APP CONTENEDOR START -->
+      <div class="contenedor contenedordisplay contenedoropacity" id="cont">
+
+        <!-- TITLE START-->
+        <h1>Decime el clima</h1>
+        <!-- TITLE END -->
+
+        <!-- SEARCH BOX START -->
+        <form id="searchform">
+          <div class="searchbox">
+            <input type="text" placeholder="Escribe tu ubicación" class="search" id="searchbox" autocomplete="off"/>
+          </div>
+        </form>
+        <!-- SEARCH BOX END -->
+
+        <!-- WEATHER CARD START -->
+        <div class="weather-card cardshowdisplay" id="card">
+          <!-- WEATHER DATA START -->
+          <div class="date" id="date"></div>
+          <div class="city" id="city"></div>
+          <div class="temperature" id="temperature"></div>
+          <div class="weather1">
+            <img src="" class="weatherimg" id="weatherimg" />
+            <div class="weather" id="weather"></div>
+          </div>
+          <div class="range" id="range"></div>
+          <!-- WEATHER DATA END -->
+        </div>
+        <!-- WEATHER CARD END -->
+
+      </div>
+      <!-- APP CONTENEDOR END -->
+    </main>
+
+    <!-- FOOTER START -->
+    <footer class="footerhidden" id="footer">
+      <p>Creado por <a href="">Nicolás Lucero</a></p>
+    </footer>
+    <!-- FOOTER END -->
+
+  </body>
+</html>

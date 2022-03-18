@@ -1,0 +1,264 @@
+
+/* --------------- GENERAL --------------- */
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Staatliches', cursive;
+	font-size: 16px;
+}
+
+body {
+	background: linear-gradient(#004CB2, #00A6FF);
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	flex-wrap: wrap;
+}
+
+
+
+/* --------------- INITIAL IMG --------------- */
+
+.mainimg {
+	cursor: pointer;
+	width: 20%;
+	margin-left: 0.625rem;
+	margin-bottom: 6.25rem;
+	animation-name: zoomin;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+	transition: all 1s;
+}
+
+.mainimgdisplay {
+	display: none;
+}
+
+.mainimgopacity {
+	cursor: pointer;
+	width: 20%;
+	margin-left: 0.625rem;
+	margin-bottom: 6.25rem;
+	animation-name: zoomin;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	opacity: 0%;
+	transition: all 1s;
+}
+
+/* --- Animation --- */
+
+@keyframes zoomin {
+	0% {width: 20%;}
+	50% {width: 20.5%;}
+	100% {width: 20%;}
+}
+
+
+
+/* --------------- APP CONTENEDOR --------------- */
+
+.contenedor {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	text-align: center;
+	margin-bottom: 6.25rem;
+	margin-left: 1.5313rem;
+	opacity: 100%;
+	transition: all 2s;
+	flex-wrap: wrap;
+}
+
+.contenedordisplay {
+	display: none;
+}
+
+.contenedoropacity {
+	opacity: 0%;
+}
+
+.contenedorenter {
+	position: relative;
+	text-align: center;
+	margin-bottom: 28.125rem;
+	margin-left: 1.5313rem;
+	transition: all 2s;
+}
+
+
+/* --------------- TITLE --------------- */
+
+h1 {
+	font-family: 'Staatliches', cursive;
+	font-size: 5.625rem;
+	color: #F7F7F7;
+	letter-spacing: 1.5313rem;
+	margin-bottom: -1.25rem;
+	margin-right: 0.0625rem;
+}
+
+
+
+/* --------------- SEARCH BOX --------------- */
+
+input {
+	width: 52.75rem;
+	height: 3.125rem;
+	border-radius: 0.625rem;
+	font-size: 1.25rem;
+	text-align: center;
+	border: 0.1875rem #fff solid;
+	background-color: #EEEEEE;
+	margin-right: 1.5625rem;
+	font-family: 'Staatliches', cursive;
+	letter-spacing: 0.9375rem;
+	transition: all .4s;
+	color: #5A5A5A;
+}
+
+input:focus {
+	background-color: #E7E7E7;
+	outline: none;
+	color: #5A5A5A;
+	letter-spacing: 0.1875rem;
+}
+
+
+/* --------------- WEATHER CARD --------------- */
+
+.weather-card {
+	position: absolute;
+	background: linear-gradient(#F7F7F7, #DEDEDE);
+	width: 52.625rem;
+	height: 26.25rem;
+	margin-top: 31.25rem;
+	border-radius: 0.625rem;
+	border: 0.25rem #fff solid;
+	color: #212121;
+	opacity: 0%;
+	transition: margin 2s;
+	transition: opacity 3s;
+	margin-bottom: 18.75rem;
+}
+
+.cardshowdisplay {
+	display: none;
+}
+
+.cardshow {
+	position: absolute;
+	background: linear-gradient(#F7F7F7, #DEDEDE);
+	width: 52.625rem;
+	height: 26.25rem;
+	margin-top: 0.375rem;
+	border-radius: 0.625rem;
+	border: 0.25rem #fff solid;
+	color: #212121;
+	opacity: 100%;
+	transition: margin 2s;
+	transition: opacity 3s;
+	margin-bottom: 18.75rem;
+}
+
+
+
+/* --------------- WEATHER DATA --------------- */
+
+.date {
+	margin-top: 0.625rem;
+	font-size: 1.25rem;
+	margin-bottom: -0.625rem;
+}
+
+.city {
+	font-size: 2.5rem;
+}
+
+.temperature {
+	font-size: 3.75rem;
+	margin-top: -0.9375rem;
+}
+
+.weatherimg {
+	margin-top: -0.625rem;
+	width: 25%;
+}
+
+.weather {
+	font-size: 1.875rem;
+}
+
+.range {
+	font-size: 1.25rem;
+}
+
+
+/* --------------- FOOTER --------------- */
+
+footer {
+	justify-content: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	padding-bottom: 0.625rem;
+}
+
+.footerhidden {
+	opacity: 0%;
+	transition: all 2s;
+}
+
+.footershow {
+	opacity: 100%;
+	transition: all 2s;
+}
+
+footer a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+footer p {
+	color: #ffffff;
+	letter-spacing: 0.125rem;
+}
+
+
+
+/* --------------- RESPONSIVE --------------- */
+
+@media (max-width: 1200px) {
+	* {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 992px) {
+	* {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 768px) {
+	* {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 576px) {
+	* {
+		font-size: 6px;
+	}
+}
+
+
+::-webkit-scrollbar {
+	display: none;
+	}
